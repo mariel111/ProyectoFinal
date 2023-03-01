@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilo.css">
+	<title>CV Mariel Acuña</title>
+</head>
+<body>
+	<section class="inicio" id="inicio">
+		<div class="contenido-seccion">
+			<header>
+				<div class="nav-bar" onclick="mostrarOcultarMenu()">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+				<!--la experiencia esta por llegar-->
+				<nav id="nav" class="nav">
+					<a href="#inicio">Inicio</a>
+					<a href="#sobremi">SobreMi</a>
+					<a href="#habilidades">Habilidades</a>
+					<a href="#contacto">Contacto</a>
+				</nav>
+			</header>
+			<div class="info">
+				<h1>Mariel Acuña</h1>
+				<h3>Mis primeros pasos en el desarrollo front-end</h3>
+			</div>
+			<div class="foto">
+				<img src="img/IMG-20230228-WA0001.jpg"alt="foto carnet"style="width: auto;">
+			</div>
+		</div>
+	</section>
+
+	<section class="sobremi" id="sobremi">
+		<div class="contenido-seccion">
+			<h2 class="titulo-seccion">Sobre Mi</h2>
+			
+			<i id="calendario" class="fa-solid fa-calendar-day"></i>11-01-1992
+			<i id="dni" class="fa-solid fa-id-card-clip"></i>36.613.280
+			<i id="cuit"class="fa-solid fa-id-card"></i>27-36613280-0
+			
+			<h3>Formación Académica</h3>
+			<br>
+			<p>Educación General Básica</p>
+			<p>2007</p>
+			<p>UEP N° 24 "San Jose"</p>
+			<p>Nivel Primario</p>
+			<p>J.J.Castelli,Chaco.</p>
+			<br>
+			<p>Educación Polimodal-Mod.Cs.Naturales-Perf.Ambiente</p>
+			<p>2009</p>
+			<p>UEP N° 24 "San Jose"</p>
+			<p>Nivel Secundario</p>
+			<p>J.J.Castelli,Chaco.</p>
+			<br>
+			<p>Enfermería Profesional</p>
+			<p>2012</p>
+			<p>UEP N° 1 "Instituto Educativo Privado"</p>
+			<p>Nivel Terciario</p>
+			<p>Resistencia,Chaco.</p>
+			<br>
+			<p>Curso de Desarrollo Web</p>
+			<p>2022</p>
+			<p>Subsecretaría de Empleo del Chaco,programa<strong>"INFORMATORIO"</strong></p>
+			<p>J.J.Castelli,Chaco.</p>
+		</div>
+	</section>
+
+	<section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Mis habilidades</h2>
+            <div>
+            	<h3 id="demo">VEAMOS EL NIVEL DE CONOCIMIENTO...</h3>
+            	<br>
+            	<button type="button" id="boton">click me!</button>
+            	<br>
+            	<span>HTML/CSS</span>
+            	<br>
+            	<span>JAVASCRIPT</span>
+            	<br>
+                <span>PYTHON</span>
+                <br>
+                <span>SQL SERVER</span>
+                <br>
+                <span>GIT-GITHUB</span>
+                <br>
+                <span>DJANGO</span>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Contacto</h2>
+            <h3 id="h3">Ponte en contacto ahora mismo!</h3> <!--apoya el cursor sobre este h3 para el evento java-->
+            <i class="fa-brands fa-whatsapp"></i>WHATSAPP
+            <span class="info-contacto">364-4368886</span>
+            <i class="fa-solid fa-envelope"></i> Correo
+            <span class="info-contacto">mariel.a.15@hotmail.com</span>
+       		<i class="fa-solid fa-location-dot"></i> Dirección
+            <span class="info-contacto">Salta 1155-J.J.Castelli,Chaco.</span>
+        </div>
+    </section>
+
+    <script src="app.js"></script>			
+
+</body>
+</html>
