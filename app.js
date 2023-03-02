@@ -19,9 +19,11 @@ for(var x = 0; x <links.length;x++){
         menu_visible = false;
     }
 }
-document.getElementById("calendario").onmouseover= function(){
-document.getElementById("calendario").innerHTML = "fecha de nacimiento"
+
+document.getElementById("calendario").onmouseover= function () {
+document.getElementById("calendario").innerHTML = "FECHA DE NACIMIENTO"//ME GUSTARIA PONER UN CONDICIONAL,PERO NO SE COMO :(.AYUDA!!!
 }
+
 document.getElementById("dni").onmouseover= function () {
 document.getElementById("dni").innerHTML = "dni"
 }
@@ -32,8 +34,16 @@ document.getElementById("boton").onclick = function () {
     console.log("Capturamos el evento click");
     document.getElementById('demo').innerHTML = "NIVEL INICIAL Y SEGUIMOS AVANZANDO!!!"
 }
-document.getElementById("h3").onmouseover= function(){
-    document.getElementById("h3").style.color = "red";
-}
 
+var x = document.getElementById("h3");
+x.addEventListener("mouseover", myFunction);
+x.addEventListener("mouseout", mySecondFunction);
+
+function myFunction() {
+  document.getElementById("h3").style.color= "red";
+}
+function mySecondFunction() {
+  document.getElementById("h3").style.color= "white";
+
+}
 
