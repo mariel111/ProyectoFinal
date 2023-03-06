@@ -15,6 +15,12 @@ html{
 .inicio{
     background-color:white ;
 }
+
+/* Estilos generales */
+.titulo-seccion{
+    font-family: Spectral;
+    font-size: 40px;
+}
 .inicio .contenido-seccion{
     max-width: 800px;
     margin: auto;
@@ -115,12 +121,49 @@ button {
     padding: 20px;
     color: firebrick;
 }
-/* Estilos generales */
-.titulo-seccion{
-    font-family: Spectral;
-    font-size: 40px;
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
-/* Seccion Habilidades */
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 10px;
+
+
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+/*SECCION HABILIDADES*/
 .habilidades{
     background-color: gainsboro;
     padding: 80px 0 100px 0px;
@@ -135,6 +178,28 @@ button {
     text-align: center;
 }
 
+
+* {box-sizing:border-box}
+
+.container {
+  width: 100%; 
+  background-color: #ddd; 
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  color: white; 
+}
+
+.html {width: 80%; background-color: firebrick;}
+.css {width: 70%; background-color: firebrick;} 
+.javascript {width: 60%; background-color: firebrick;}
+.python {width: 75%; background-color: firebrick;} 
+.sql {width: 65%; background-color: firebrick;} 
+.git-github {width: 90%; background-color: firebrick;} 
+.django {width: 60%; background-color: firebrick;}
 
 /* SECCION CONTACTO */
 .contacto{

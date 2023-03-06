@@ -20,16 +20,6 @@ for(var x = 0; x <links.length;x++){
     }
 }
 
-document.getElementById("calendario").onmouseover= function () {
-document.getElementById("calendario").innerHTML = "FECHA DE NACIMIENTO"//ME GUSTARIA PONER UN CONDICIONAL,PERO NO SE COMO :(.AYUDA!!!
-}
-
-document.getElementById("dni").onmouseover= function () {
-document.getElementById("dni").innerHTML = "dni"
-}
-document.getElementById("cuit").onmouseover= function () {
-document.getElementById("cuit").innerHTML = "cuit"
-}
 document.getElementById("boton").onclick = function () {
     console.log("Capturamos el evento click");
     document.getElementById('demo').innerHTML = "NIVEL INICIAL Y SEGUIMOS AVANZANDO!!!"
