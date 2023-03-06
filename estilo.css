@@ -179,28 +179,32 @@ button {
 }
 
 
-* {box-sizing:border-box}
-
-.container {
-  width: 100%; 
-  background-color: #ddd; 
+.habilidades .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
-
-.skills {
-  text-align: right; 
-  padding-top: 10px; 
-  padding-bottom: 10px; 
-  color: white; 
+.habilidades .contenido-seccion .fila .col{
+    width: 47%;
+    text-align: left;
 }
-
-.html {width: 80%; background-color: firebrick;}
-.css {width: 70%; background-color: firebrick;} 
-.javascript {width: 60%; background-color: firebrick;}
-.python {width: 75%; background-color: firebrick;} 
-.sql {width: 65%; background-color: firebrick;} 
-.git-github {width: 90%; background-color: firebrick;} 
-.django {width: 60%; background-color: firebrick;}
-
+.habilidades .contenido-seccion .fila .col .cont-barra{
+    display: flex;
+    align-items: center;
+}
+.habilidades .contenido-seccion .barra{
+    display: flex;
+    border: 1px solid firebrick;
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.habilidades .contenido-seccion .barra .e{
+    background-color: #363636;
+    width: 20px;
+    height: 30px;
+    margin-right: 2px;
+}
 /* SECCION CONTACTO */
 .contacto{
     background-color: #202020;
